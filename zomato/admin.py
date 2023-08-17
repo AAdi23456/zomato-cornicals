@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import dish, orders
 
-# Register your models here.
+admin.site.register(dish)
+admin.site.register(orders)

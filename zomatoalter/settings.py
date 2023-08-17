@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'djongo'
+    'djongo',
+    'zomato'
 ]
 
 MIDDLEWARE = [
@@ -77,12 +78,12 @@ TIME_ZONE = 'Asia/Kolkata'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django',
-        'ENFORCE_SCHEMA': True,
-        'NAME': 'zomato',
-        'CLIENT': {
-            'host': 'mongodb+srv://aaditya:aaditya@cluster0.lfdbumj.mongodb.net/zomato?retryWrites=true&w=majority',
-        },
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'zomato_chornicles',
+        'USER': 'root',
+        'PASSWORD': '4Be2dy:-j/yuXhs',
+        'HOST': 'localhost',  
+        'PORT': '3306',       # Change this to your MySQL server's port
     }
 }
 
